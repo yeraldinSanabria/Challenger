@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
 </head>
 <body>
-    
+    <main>
+        <section class="ingrese-texto">
+            <header>
+                <img src="./imagenes/Logo-1.png" alt="logo">
+            </header>
+            <section class="content-main">
+                <textarea class="texto-recibido" placeholder="ingrese el texto aqui"></textarea>
+                <section class="botones">
+                    <p class="advertencia">
+                        <img src="./imagenes/bi_exclamation-circle-fill.png" alt="">
+                        <span >solo letras minusculas sin acentos</span>
+                    </p>
+                    <section>
+                        <button class="encriptar">Encriptar</button>
+                        <button class="desencriptar">Desencriptar</button>
+                    </section>
+                </section>
+            </section>
+            
+        </section>
+        <section class="texto-desifrado">
+            <img class="dibujo-busqueda" src="./imagenes/Muñeco.png" alt="dibujo de busqueda">
+            <span class="mensaje-alerta">Ningún mensaje fue encontrado </span>
+            <span class="mensaje-solicitud">Ingrese el texto que desees encriptar o desencriptar</span>
+        </section>
+    </main>
 </body>
 </html>

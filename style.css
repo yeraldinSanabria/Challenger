@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5E5E5;
+    line-height: 1;
+
+}
+
+header {
+    padding: 5px;
+}
+
+.ingrese-texto,
+.texto-desifrado {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ingrese-texto {
+    width: 60%;
+}
+
+.content-main {
+    width: 80%;
+    margin-left: 19%;
+}
+
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.texto-recibido {
+    font-size: 2em;
+    display: block;
+    background: #E5E5E5;
+    color: #0A3871;
+    border: #E5E5E5;
+    margin: 10px;
+    width: 100%;
+    min-height: 300px;
+    resize: none;
+}
+
+.botones .advertencia {
+    text-align: left;
+    margin: 10px;
+}
+
+
+.encriptar {
+    background: #0A3871;
+    border-radius: 24px;
+    width: 280px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    margin: 5px;
+}
+
+.desencriptar {
+    background: #D8DFE8;
+    border-radius: 24px;
+    width: 280px;
+    height: 50px;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    margin: 5px;
+}
+
+
+.texto-desifrado {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    background: #FFFFFF;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+}
+
+.dibujo-busqueda {
+    width: 80%;
+    height: auto;
+    margin: 50px auto 0 20px;
+}
+
+.mensaje-alerta {
+    display: block;
+    text-align: center;
+    color:#343A40;
+   font-size:x-large;
+  
+}
+
+.mensaje-solicitud {
+    display: block;
+    text-align: center;
+    color:#495057;
+    padding: 10px;
+}
