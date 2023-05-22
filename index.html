@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Encriptador</title>
 </head>
+
 <body>
     <main>
         <section class="ingrese-texto">
@@ -15,25 +16,31 @@
                 <img src="./imagenes/Logo-1.png" alt="logo">
             </header>
             <section class="content-main">
-                <textarea class="texto-recibido" placeholder="ingrese el texto aqui"></textarea>
+                <textarea class="texto-recibido" placeholder="ingrese el texto aqui" id="texto"></textarea>
                 <section class="botones">
                     <p class="advertencia">
                         <img src="./imagenes/bi_exclamation-circle-fill.png" alt="">
-                        <span >solo letras minusculas sin acentos</span>
+                        <span>solo letras minusculas sin acentos</span>
                     </p>
                     <section>
-                        <button class="encriptar">Encriptar</button>
+                        <button class="encriptar" id="encriptar" onclick="botonEncriptar()">Encriptar</button>
                         <button class="desencriptar">Desencriptar</button>
                     </section>
                 </section>
             </section>
-            
+
         </section>
-        <section class="texto-desifrado">
+        <section class="texto-desifrado" id="texto-desifrado">
             <img class="dibujo-busqueda" src="./imagenes/Muñeco.png" alt="dibujo de busqueda">
             <span class="mensaje-alerta">Ningún mensaje fue encontrado </span>
             <span class="mensaje-solicitud">Ingrese el texto que desees encriptar o desencriptar</span>
         </section>
+        <section class="none contenedorDos" id="none">
+            <textarea class="" id="textoDos"></textarea>
+            <button class="copiar">Copiar</button>
+        </section>
     </main>
 </body>
+<script src="./index.js"></script>
+
 </html>
