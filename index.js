@@ -1,31 +1,23 @@
-//var encriptar = document.getElementById('encriptar')
-//var texto = document.getElementById('texto');
-
-//encriptar.addEventListener('click', () => {
-  //  mensajeEncriptar(texto.value)
-//})
-
-
 const textArea = document.querySelector(".texto-recibido")
 const mensaje = document.querySelector("#textoDos")
 
 
-function ocultar(){
+function ocultar() {
     const ocultarDos = document.getElementById("texto-desifrado")
     ocultarDos.classList.add("none");
-
 }
 
-function mostrar(){
+function mostrar() {
     const mostarDos = document.getElementById("none")
     mostarDos.classList.remove("none");
     mostarDos.classList.add("block");
 
 }
 
-function botonEncriptar(){
+function botonEncriptar() {
     const texto = mensajeEncriptar(textArea.value)
     mensaje.value = texto;
+    textArea.value = "";
     ocultar();
     mostrar();
 
@@ -47,4 +39,42 @@ function mensajeEncriptar(textoEncriptador) {
         }
     }
     return textoEncriptador
+}
+
+function botonDesencriptar() {
+    const texto = mensajeDesencriptar(textArea.value)
+    mensaje.value = texto;
+    textArea.value = "";
+}
+
+function botonDesencriptar() {
+    const texto = document.getElementById("texto").value
+    document.getElementById("textoDos").value = mensajeDesencriptar(texto)
+    textArea.value = "";
+}
+
+
+function copiar() {
+    let textoD = document.getElementById("textoDos").value;
+    document.getElementById("texto").value = textoD
+    
+}
+
+
+function mensajeDesencriptar(textoDesencriptador) {
+    let codigoEncriptar = [
+        ["e", "enter"],
+        ["i", "imes"],
+        ["a", "ai"],
+        ["o", "ober"],
+        ["u", "ufat"],
+    ]
+    textoDesencriptador = textoDesencriptador.toLowerCase()
+
+    for (let i = 0; i < codigoEncriptar.length; i++) {
+        if (textoDesencriptador.includes(codigoEncriptar[i][1])) {
+            textoDesencriptador = textoDesencriptador.replaceAll(codigoEncriptar[i][1], codigoEncriptar[i][0])
+        }
+    }
+    return textoDesencriptador
 }

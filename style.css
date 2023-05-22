@@ -125,6 +125,7 @@ textarea::placeholder {
     margin: 10px;
 }
 .contenedorDos textarea{
+    text-align: center;
     font-size: 2em;
     display: block;
     background: #FFFFFF;
@@ -144,7 +145,7 @@ textarea::placeholder {
     color: #0A3871;
     font-size: 16px;
     border: 1px solid #0A3871;
-    margin:95px 10px ;
+    margin:90px 10px ;
     
 }    
 
@@ -155,4 +156,3 @@ etiqueta html p, input,  img
 por id #prueba
 por calse  (punto + nombre) .copiar
 */
-
