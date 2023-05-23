@@ -148,11 +148,7 @@ textarea::placeholder {
     margin:90px 10px ;
     
 }    
+ .copy{
+    text-align: center;
+ }
 
-
-/*
-
-etiqueta html p, input,  img
-por id #prueba
-por calse  (punto + nombre) .copiar
-*/
